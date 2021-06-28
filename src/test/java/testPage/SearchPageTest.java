@@ -33,7 +33,7 @@ public void start() throws IOException, InterruptedException {
 	login=home.getSigninPage();
 	Map<String,String> data=ExcelRead.getMap();
 	search=login.login(data.get("username"), data.get("passwrd"));
-	//search=login.login("suryaannthomas21@gmail.com", "Surya@55");
+	
 	
 }
 @Test(priority=1)

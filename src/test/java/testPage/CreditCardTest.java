@@ -39,7 +39,7 @@ public class CreditCardTest extends TestBase{
 		Map<String,String> data=ExcelRead.getMap();
 		search=login.login(data.get("username"), data.get("passwrd"));
 
-		//search=login.login("suryaannthomas21@gmail.com", "Surya@55");
+		
 		product=search.enterProduct();
 		product.nextWindow();
 		payment=product.buyClick();
