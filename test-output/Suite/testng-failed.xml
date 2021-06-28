@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" parallel="methods">
+  <listeners>
+    <listener class-name="base.ExtentReportListener"/>
+  </listeners>
+  <test name="Test(failed)" parallel="methods">
+    <classes>
+      <class name="testPage.ProductPageTest">
+        <methods>
+          <include name="ClickOnBuy"/>
+          <include name="start"/>
+          <include name="checkTitle"/>
+        </methods>
+      </class> <!-- testPage.ProductPageTest -->
+      <class name="testPage.HomePageTest">
+        <methods>
+          <include name="loginTest"/>
+          <include name="veriftTitle"/>
+          <include name="before"/>
+        </methods>
+      </class> <!-- testPage.HomePageTest -->
+      <class name="testPage.LoginPageTest">
+        <methods>
+          <include name="end"/>
+          <include name="before"/>
+        </methods>
+      </class> <!-- testPage.LoginPageTest -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
