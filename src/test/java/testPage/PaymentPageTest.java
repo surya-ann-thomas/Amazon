@@ -42,12 +42,12 @@ CrediardPage credit;
 		product.nextWindow();
 		payment=product.buyClick();
 	}
-@Test(enabled=false)
+@Test(priority=1)
 	public void paymentTitle() {
 		String text=payment.paymentPageTitle();
 		Assert.assertEquals(text, "Select a Payment Method - Amazon.in Checkout");
 	}
-	@Test
+	@Test(priority=2)
 	public void cardSelect() throws InterruptedException, IOException {
 		credit=payment.selectCardOption();
 	}

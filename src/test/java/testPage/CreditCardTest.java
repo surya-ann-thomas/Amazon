@@ -5,7 +5,9 @@ import java.util.Map;
 
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
+import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
 import com.util.ExcelRead;
@@ -46,16 +48,23 @@ public class CreditCardTest extends TestBase{
 		credit=payment.selectCardOption();
 	}
 	@Test(enabled=false)
-public void enterCard() {
+public void enterCard() throws InterruptedException {
 credit.enterCardNumber();	
 }
-	@Test
+	@Test(priority=1)
 	public void tile() throws InterruptedException {
 		String text=credit.getTitle();
 		Assert.assertEquals(text,"Add a credit or debit card");
 	}
+	@Test(priority=2)
+	public void EnterCardAndverifyErrorMessage() throws InterruptedException {
+		credit.enterCardNumber();
+			String text=credit.verify();
+			Assert.assertEquals(text, "Card number is not correct.","card number is valid");
+		
+	}
 	@AfterMethod
 	public void end() {
-		//driver.quit();
+		driver.quit();
 	}
 }

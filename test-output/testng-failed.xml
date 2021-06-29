@@ -6,7 +6,7 @@
       <class name="testPage.CreditCardTest">
         <methods>
           <include name="end"/>
-          <include name="tile"/>
+          <include name="verifyErrorMessage"/>
           <include name="start"/>
         </methods>
       </class> <!-- testPage.CreditCardTest -->

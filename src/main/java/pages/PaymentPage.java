@@ -37,6 +37,7 @@ public CrediardPage selectCardOption() throws InterruptedException, IOException 
 	//addCard.sendKeys(newTab);
 	//ArrayList<String> tabs=new ArrayList<> (driver.getWindowHandles());
 	//driver.switchTo().window(tabs.get(1));
+	driver.switchTo().frame(0);
 	return new CrediardPage();
 }
 }

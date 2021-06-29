@@ -1,93 +1,155 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" total="1" passed="0">
+<testng-results skipped="0" failed="0" total="11" passed="11">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="97681" started-at="2021-06-28T12:10:42Z" finished-at="2021-06-28T12:12:20Z">
+  <suite name="Suite" duration-ms="283651" started-at="2021-06-29T14:26:22Z" finished-at="2021-06-29T14:31:05Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="97681" started-at="2021-06-28T12:10:42Z" finished-at="2021-06-28T12:12:20Z">
-      <class name="testPage.CreditCardTest">
-        <test-method status="PASS" signature="start()[pri:0, instance:testPage.CreditCardTest@11dc3715]" name="start" is-config="true" duration-ms="60551" started-at="2021-06-28T17:40:42Z" finished-at="2021-06-28T17:41:43Z">
+    <test name="Test" duration-ms="283651" started-at="2021-06-29T14:26:22Z" finished-at="2021-06-29T14:31:05Z">
+      <class name="testPage.ProductPageTest">
+        <test-method status="PASS" signature="start()[pri:0, instance:testPage.ProductPageTest@f6efaab]" name="start" is-config="true" duration-ms="18057" started-at="2021-06-29T19:57:06Z" finished-at="2021-06-29T19:57:24Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- start -->
-        <test-method status="FAIL" signature="tile()[pri:0, instance:testPage.CreditCardTest@11dc3715]" name="tile" duration-ms="37108" started-at="2021-06-28T17:41:43Z" finished-at="2021-06-28T17:42:20Z">
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//h4[@class='a-popover-header-content']"}
-  (Session info: chrome=91.0.4472.114)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'ADMIN-PC', ip: '192.168.42.112', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_201'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.114, chrome: {chromedriverVersion: 91.0.4472.19 (1bf021f248676..., userDataDir: C:\Users\Admin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:49721}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 66167b754d7dde1da1ce10fa9fa9ce36
-*** Element info: {Using=xpath, value=//h4[@class='a-popover-header-content']}]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//h4[@class='a-popover-header-content']"}
-  (Session info: chrome=91.0.4472.114)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'ADMIN-PC', ip: '192.168.42.112', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_201'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.114, chrome: {chromedriverVersion: 91.0.4472.19 (1bf021f248676..., userDataDir: C:\Users\Admin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:49721}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 66167b754d7dde1da1ce10fa9fa9ce36
-*** Element info: {Using=xpath, value=//h4[@class='a-popover-header-content']}
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy9.getText(Unknown Source)
-	at pages.CrediardPage.getTitle(CrediardPage.java:38)
-	at testPage.CreditCardTest.tile(CreditCardTest.java:48)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
-	at org.testng.TestRunner.privateRun(TestRunner.java:767)
-	at org.testng.TestRunner.run(TestRunner.java:617)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
-	at org.testng.TestNG.run(TestNG.java:1031)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+        <test-method status="PASS" signature="checkTitle()[pri:0, instance:testPage.ProductPageTest@f6efaab]" name="checkTitle" duration-ms="3824" started-at="2021-06-29T19:57:24Z" finished-at="2021-06-29T19:57:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkTitle -->
+        <test-method status="PASS" signature="end()[pri:0, instance:testPage.ProductPageTest@f6efaab]" name="end" is-config="true" duration-ms="670" started-at="2021-06-29T19:57:28Z" finished-at="2021-06-29T19:57:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- end -->
+        <test-method status="PASS" signature="start()[pri:0, instance:testPage.ProductPageTest@f6efaab]" name="start" is-config="true" duration-ms="20700" started-at="2021-06-29T19:59:12Z" finished-at="2021-06-29T19:59:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- start -->
+        <test-method status="PASS" signature="ClickOnBuy()[pri:0, instance:testPage.ProductPageTest@f6efaab]" name="ClickOnBuy" duration-ms="7763" started-at="2021-06-29T19:59:33Z" finished-at="2021-06-29T19:59:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ClickOnBuy -->
+        <test-method status="PASS" signature="end()[pri:0, instance:testPage.ProductPageTest@f6efaab]" name="end" is-config="true" duration-ms="661" started-at="2021-06-29T19:59:41Z" finished-at="2021-06-29T19:59:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- end -->
+      </class> <!-- testPage.ProductPageTest -->
+      <class name="testPage.CreditCardTest">
+        <test-method status="PASS" signature="start()[pri:0, instance:testPage.CreditCardTest@74f0ea28]" name="start" is-config="true" duration-ms="36283" started-at="2021-06-29T19:56:22Z" finished-at="2021-06-29T19:56:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- start -->
+        <test-method status="PASS" signature="tile()[pri:0, instance:testPage.CreditCardTest@74f0ea28]" name="tile" duration-ms="7083" started-at="2021-06-29T19:56:58Z" finished-at="2021-06-29T19:57:05Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tile -->
-        <test-method status="PASS" signature="end()[pri:0, instance:testPage.CreditCardTest@11dc3715]" name="end" is-config="true" duration-ms="0" started-at="2021-06-28T17:42:20Z" finished-at="2021-06-28T17:42:20Z">
+        <test-method status="PASS" signature="end()[pri:0, instance:testPage.CreditCardTest@74f0ea28]" name="end" is-config="true" duration-ms="700" started-at="2021-06-29T19:57:05Z" finished-at="2021-06-29T19:57:06Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- end -->
+        <test-method status="PASS" signature="start()[pri:0, instance:testPage.CreditCardTest@74f0ea28]" name="start" is-config="true" duration-ms="34379" started-at="2021-06-29T19:58:33Z" finished-at="2021-06-29T19:59:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- start -->
+        <test-method status="PASS" signature="EnterCardAndverifyErrorMessage()[pri:0, instance:testPage.CreditCardTest@74f0ea28]" name="EnterCardAndverifyErrorMessage" duration-ms="3555" started-at="2021-06-29T19:59:08Z" finished-at="2021-06-29T19:59:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- EnterCardAndverifyErrorMessage -->
+        <test-method status="PASS" signature="end()[pri:0, instance:testPage.CreditCardTest@74f0ea28]" name="end" is-config="true" duration-ms="665" started-at="2021-06-29T19:59:11Z" finished-at="2021-06-29T19:59:12Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- end -->
       </class> <!-- testPage.CreditCardTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      <class name="testPage.PaymentPageTest">
+        <test-method status="PASS" signature="start()[pri:0, instance:testPage.PaymentPageTest@3c19aaa5]" name="start" is-config="true" duration-ms="37350" started-at="2021-06-29T19:57:29Z" finished-at="2021-06-29T19:58:06Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- start -->
+        <test-method status="PASS" signature="paymentTitle()[pri:0, instance:testPage.PaymentPageTest@3c19aaa5]" name="paymentTitle" duration-ms="23" started-at="2021-06-29T19:58:06Z" finished-at="2021-06-29T19:58:06Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- paymentTitle -->
+        <test-method status="PASS" signature="end()[pri:0, instance:testPage.PaymentPageTest@3c19aaa5]" name="end" is-config="true" duration-ms="658" started-at="2021-06-29T19:58:07Z" finished-at="2021-06-29T19:58:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- end -->
+        <test-method status="PASS" signature="start()[pri:0, instance:testPage.PaymentPageTest@3c19aaa5]" name="start" is-config="true" duration-ms="27250" started-at="2021-06-29T19:59:41Z" finished-at="2021-06-29T20:00:09Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- start -->
+        <test-method status="PASS" signature="cardSelect()[pri:0, instance:testPage.PaymentPageTest@3c19aaa5]" name="cardSelect" duration-ms="8269" started-at="2021-06-29T20:00:09Z" finished-at="2021-06-29T20:00:17Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cardSelect -->
+        <test-method status="PASS" signature="end()[pri:0, instance:testPage.PaymentPageTest@3c19aaa5]" name="end" is-config="true" duration-ms="659" started-at="2021-06-29T20:00:17Z" finished-at="2021-06-29T20:00:18Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- end -->
+      </class> <!-- testPage.PaymentPageTest -->
+      <class name="testPage.HomePageTest">
+        <test-method status="PASS" signature="before()[pri:0, instance:testPage.HomePageTest@6aeb35e6]" name="before" is-config="true" duration-ms="6468" started-at="2021-06-29T19:58:07Z" finished-at="2021-06-29T19:58:14Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- before -->
+        <test-method status="PASS" signature="veriftTitle()[pri:0, instance:testPage.HomePageTest@6aeb35e6]" name="veriftTitle" duration-ms="127" started-at="2021-06-29T19:58:14Z" finished-at="2021-06-29T19:58:14Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- veriftTitle -->
+        <test-method status="PASS" signature="end()[pri:0, instance:testPage.HomePageTest@6aeb35e6]" name="end" is-config="true" duration-ms="935" started-at="2021-06-29T19:58:15Z" finished-at="2021-06-29T19:58:15Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- end -->
+        <test-method status="PASS" signature="before()[pri:0, instance:testPage.HomePageTest@6aeb35e6]" name="before" is-config="true" duration-ms="5800" started-at="2021-06-29T20:00:18Z" finished-at="2021-06-29T20:00:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- before -->
+        <test-method status="PASS" signature="loginTest()[pri:0, instance:testPage.HomePageTest@6aeb35e6]" name="loginTest" duration-ms="2183" started-at="2021-06-29T20:00:24Z" finished-at="2021-06-29T20:00:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest -->
+        <test-method status="PASS" signature="end()[pri:0, instance:testPage.HomePageTest@6aeb35e6]" name="end" is-config="true" duration-ms="815" started-at="2021-06-29T20:00:26Z" finished-at="2021-06-29T20:00:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- end -->
+      </class> <!-- testPage.HomePageTest -->
+      <class name="testPage.LoginPageTest">
+        <test-method status="PASS" signature="before()[pri:0, instance:testPage.LoginPageTest@1283bb96]" name="before" is-config="true" duration-ms="9395" started-at="2021-06-29T20:00:27Z" finished-at="2021-06-29T20:00:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- before -->
+        <test-method status="PASS" signature="loginTest()[pri:0, instance:testPage.LoginPageTest@1283bb96]" name="loginTest" duration-ms="4240" started-at="2021-06-29T20:00:36Z" finished-at="2021-06-29T20:00:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest -->
+        <test-method status="PASS" signature="end()[pri:0, instance:testPage.LoginPageTest@1283bb96]" name="end" is-config="true" duration-ms="619" started-at="2021-06-29T20:00:44Z" finished-at="2021-06-29T20:00:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- end -->
+      </class> <!-- testPage.LoginPageTest -->
+      <class name="testPage.SearchPageTest">
+        <test-method status="PASS" signature="start()[pri:0, instance:testPage.SearchPageTest@77fbd92c]" name="start" is-config="true" duration-ms="13330" started-at="2021-06-29T19:58:15Z" finished-at="2021-06-29T19:58:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- start -->
+        <test-method status="PASS" signature="siginCheck()[pri:0, instance:testPage.SearchPageTest@77fbd92c]" name="siginCheck" duration-ms="3290" started-at="2021-06-29T19:58:29Z" finished-at="2021-06-29T19:58:32Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- siginCheck -->
+        <test-method status="PASS" signature="end()[pri:0, instance:testPage.SearchPageTest@77fbd92c]" name="end" is-config="true" duration-ms="623" started-at="2021-06-29T19:58:33Z" finished-at="2021-06-29T19:58:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- end -->
+        <test-method status="PASS" signature="start()[pri:0, instance:testPage.SearchPageTest@77fbd92c]" name="start" is-config="true" duration-ms="12458" started-at="2021-06-29T20:00:45Z" finished-at="2021-06-29T20:00:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- start -->
+        <test-method status="PASS" signature="productClick()[pri:0, instance:testPage.SearchPageTest@77fbd92c]" name="productClick" duration-ms="7069" started-at="2021-06-29T20:00:57Z" finished-at="2021-06-29T20:01:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- productClick -->
+        <test-method status="PASS" signature="end()[pri:0, instance:testPage.SearchPageTest@77fbd92c]" name="end" is-config="true" duration-ms="662" started-at="2021-06-29T20:01:05Z" finished-at="2021-06-29T20:01:05Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- end -->
+      </class> <!-- testPage.SearchPageTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>

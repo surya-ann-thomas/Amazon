@@ -50,12 +50,7 @@ Assert.assertEquals(login.loginTitle(), "Amazon Sign In","Title not found");
 
 @Test(priority=2)
 public void loginTest() throws IOException, InterruptedException {
-//	
-//		FileInputStream fis=new FileInputStream("D:\\selenium_training\\AmazonPom\\src\\main\\java\\testData\\Book4.xlsx");
-//		
-//	
-//		Workbook workbook=new XSSFWorkbook(fis);
-//	 Sheet sheet=(XSSFSheet)workbook.getSheetAt(0);
+
 	Map<String,String> data=ExcelRead.getMap();
 	search=login.login(data.get("username"), data.get("passwrd"));
 
